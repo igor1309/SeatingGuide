@@ -49,6 +49,7 @@
 		2A3E436922C2B5FA0061B5B9 /* SeatingGuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeatingGuideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A3E436D22C2B5FA0061B5B9 /* SeatingGuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatingGuideUITests.swift; sourceTree = "<group>"; };
 		2A3E436F22C2B5FA0061B5B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A3E437B22C2C1480061B5B9 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +103,7 @@
 				2A3E434B22C2B5F90061B5B9 /* AppDelegate.swift */,
 				2A3E434D22C2B5F90061B5B9 /* SceneDelegate.swift */,
 				2A3E434F22C2B5F90061B5B9 /* ContentView.swift */,
+				2A3E437B22C2C1480061B5B9 /* MyPlayground.playground */,
 				2A3E435122C2B5FA0061B5B9 /* Assets.xcassets */,
 				2A3E435622C2B5FA0061B5B9 /* LaunchScreen.storyboard */,
 				2A3E435922C2B5FA0061B5B9 /* Info.plist */,

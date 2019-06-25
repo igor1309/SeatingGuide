@@ -20,7 +20,7 @@ struct ContentView : View {
 
         return NavigationView {
             Form {
-                Section(header: Text("Restaurant Area:".uppercased()), footer: Text("Drag the slider to change Seating or Total area of the Restaurant if Kitchen is included.").lineLimit(3)) {
+                Section(header: Text("Restaurant Area".uppercased()), footer: Text("Drag the slider to change Seating or Total (if Kitchen is included) area of the Restaurant.").lineLimit(3)) {
 
                     HStack {
                         Text("\(isKitchenAreaIncluded ? "Total" : "Seating"): \(Int(area)) sq meters")
@@ -32,7 +32,7 @@ struct ContentView : View {
                     Text("Seating \(Int(seatingArea)) + Kitchen \(Int(kitchenArea)) = Total \(Int(seatingArea + kitchenArea)) sq m").color(.secondary)
                 }
                     
-                Section(header: Text("Number of Guests".uppercased()), footer: Text("general seating guidelines"))
+                Section(header: Text("Number of Guests".uppercased()))
                 {
 //                  https://totalfood.com/how-to-create-a-restaurant-floor-plan/
 //                  Fine Dining: 18 – 20 Square Feet
@@ -75,13 +75,15 @@ struct ContentView : View {
                 }
                 
                 Section(header: Text("Notes".uppercased())) {
+                    //TODO: - надо бы текст переисать (копирайт!!)
+                    //TODO: - заменить футы на (санти)метры
                     Text("For safety reasons and to allow for the free flow of traffic for diners and servers, the traffic path between occupied chairs should be at least 18 inches wide and you should leave at least 4 – 5 feet per table, including chair space. This allows for free movement of servers between stations and the kitchen and provides enough comfortable room for the guests to move around. It is very important for safety reasons that there is enough space for the guest and staff to move around and that the aisles are clear, especially in case there is a fire.").italic()
                         .font(.caption)
                         .lineLimit(nil)
                         .foregroundColor(Color.secondary)
                 }
                     
-                .navigationBarTitle(Text("Seating"))
+                .navigationBarTitle(Text("Seating Guidelines"))
             }
             
         }
@@ -93,7 +95,7 @@ struct ContentView_Previews : PreviewProvider {
     static var previews: some View {
         Group {
             ContentView(area: 200.0)
-                .environment(\.colorScheme, .dark)
+//                .environment(\.colorScheme, .dark)
             ContentView(area: 200.0).environment(\.sizeCategory, .accessibilityMedium)
         }
     }

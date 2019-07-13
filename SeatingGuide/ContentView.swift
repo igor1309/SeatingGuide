@@ -43,6 +43,7 @@ struct ContentView : View {
 //                  Table Service, Hotel/Club:  15 – 18 Square Feet
 //                  Banquet, Minimum: 10 – 11 Square Feet
                     
+                    //  MARK:- завести как данные!!
                     HStack {
                         Text("Fine Dining")
                         Spacer()
